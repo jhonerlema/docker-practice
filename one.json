@@ -1,0 +1,32 @@
+{
+  "Name": "first_bridge",
+  "Id": "8972d0facb715a3eee76ca8a383ff7e87d8f87b4722128f54217c239187d8134",
+  "Created": "2025-11-12T16:31:19.139543083Z",
+  "Scope": "local",
+  "Driver": "bridge",
+  "EnableIPv4": true,
+  "EnableIPv6": false,
+  "IPAM": {
+    "Driver": "default",
+    "Options": {},
+    "Config": [
+      {
+        "Subnet": "172.18.0.0/16",
+        "Gateway": "172.18.0.1"
+      }
+    ]
+  },
+  "Internal": false,
+  "Attachable": false,
+  "Ingress": false,
+  "ConfigFrom": {
+    "Network": ""
+  },
+  "ConfigOnly": false,
+  "Containers": {},
+  "Options": {
+    "com.docker.network.enable_ipv4": "true",
+    "com.docker.network.enable_ipv6": "false"
+  },
+  "Labels": {}
+}

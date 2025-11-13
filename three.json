@@ -1,0 +1,31 @@
+{
+  "Name": "host",
+  "Id": "59eebda8fec73651ea8566bf06f2db8eb7b5999d143beab755ab106cf62177e5",
+  "Created": "2025-10-26T15:21:47.22145879Z",
+  "Scope": "local",
+  "Driver": "host",
+  "EnableIPv4": true,
+  "EnableIPv6": false,
+  "IPAM": {
+    "Driver": "default",
+    "Options": null,
+    "Config": null
+  },
+  "Internal": false,
+  "Attachable": false,
+  "Ingress": false,
+  "ConfigFrom": {
+    "ConfigOnly": false,
+    "Containers": {
+      "71fcb29c3fa87941f70f64e886826f8456ef51842e499a6df560ee187d4b16df": {
+        "Name": "ngrok_ngrok-docker-extension-desktop-extension-service",
+        "EndpointID": "515aad66063b10e751576cee164c007def302f754e8e434dbfd6d88c7d15d645",
+        "MacAddress": "",
+        "IPv4Address": "",
+        "IPv6Address": ""
+      }
+    },
+    "Options": {},
+    "Labels": {}
+  }
+}
