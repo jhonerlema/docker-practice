@@ -8,3 +8,5 @@ COPY CI/index.html /usr/share/nginx/html/
 
 # Configuración opcional pero recomendada para asegurar que index.html se sirva
 COPY CI/default.conf /etc/nginx/conf.d/default.conf
+
+RUN ls -l /usr/share/nginx/html
