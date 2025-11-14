@@ -1,0 +1,31 @@
+name: Docker Test
+
+on:
+  push:
+    branches:
+      -main
+
+jobs: 
+  docker-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check repository
+      uses: actions/checkout@v3 
+      
+    - name: Set up Docker Buildx
+      uses: docker/setup-bulidx-action@v2
+
+    - name: Run Docker Container
+      run: |
+        docker run -d --name testcontainer alpine tail -f /dev/null
+
+    - name: Run test
+      run: |
+        docker exec testcontainer /bin/sh -c "
+          echo 'Ejecutando pruebas....';
+          cd home
+          mkdir lema
+          cd lema
+          printf 'Este es el contenido del archivo.\n Puede incluir varías líneas. \n > ejemplo.txt
+          ls -a || exit 1
+        "
