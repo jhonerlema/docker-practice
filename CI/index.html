@@ -1,189 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://avatars.githubusercontent.com/u/103002302?v=4"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/103002302?v=4">
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-teal.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jhon Lema</title>
+    <script src="https://unpkg.com/feather-icons"></script>
 
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-    rel="stylesheet">
-  <title>Jhon Lema</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-
-  <style>
-    body {
-      background: linear-gradient(27deg, #151515 10px, transparent 5px) 0 5px,
-        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-        linear-gradient(#1d1d1d 25%,
-          #1a1a1a 25%,
-          #1a1a1a 50%,
-          transparent 50%,
-          transparent 75%,
-          #242424 75%,
-          #242424);
-      background-color: #00271f;
-      background-size: 20px 20px;
-      /* The image used for background */
-      font-family: "JetBrains Mono", monospace;
-      padding: 60px 0px;
-    }
-
-    h4 {
-      color: #cdfffc;
-      font-weight: bolder;
-    }
-
-    .image-container img {
-      padding: 4px;
-      border: groove 8px #009286;
-      box-shadow: #007371 0px 6px 12px;
-    }
-
-    .container {
-      width: 100%;
-      height: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    .links-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .links-container a {
-      width: 80%;
-    }
-
-    .w3-theme-l1 {
-      background-color: #009286 !important;
-      font-weight: 500;
-      transition: background-color 0.2s ease, box-shadow 0.2s ease, width 0.4s ease;
-      /* Smooth transition effect */
-    }
-
-    .w3-theme-l1:hover {
-      background-color: #00ede1 !important;
-      text-decoration: underline;
-      width: 82%;
-      box-shadow: #007371 0px 4px 8px;
-      font-weight: 700;
-    }
-
-    .margin-top-2 {
-      margin-top: 32px;
-    }
-
-    .bottom {
-      width: 100%;
-      text-align: center;
-      width: auto;
-      font-weight: bolder;
-    }
-
-    .bottom span {
-      color: #038785;
-    }
-
-    .bottom svg {
-      stroke: #038785;
-      fill: #00b6b3;
-    }
-
-    @media (min-width: 768px) {
-      .link {
-        width: 100%;
+    <style>
+      body {
+        background: linear-gradient(27deg, #151515 10px, transparent 5px) 0 5px,
+          linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+          linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+          linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+          linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+          linear-gradient(
+            #1d1d1d 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            transparent 50%,
+            transparent 75%,
+            #242424 75%,
+            #242424
+          );
+        background-color: #00271f;
+        background-size: 20px 20px;
+        /* The image used for background */
+        font-family: "JetBrains Mono", monospace;
+        padding: 60px 0px;
       }
-    }
 
-    @media (min-width: 576px) {
+      h4 {
+        color: #cdfffc;
+        font-weight: bolder;
+      }
+
+      .image-container img {
+        padding: 4px;
+        border: groove 8px #009286;
+        box-shadow: #007371 0px 6px 12px;
+      }
+
       .container {
-        max-width: 540px;
+        width: 100%;
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <!-- Content container -->
-  <div class="container">
-    <!-- Image and name container. Change to your pictue here. -->
-    <div style="text-align: center">
-      <div class="image-container">
-        <img src="https://avatars.githubusercontent.com/u/103002302?v=4" class="w3-margin" alt="image" width="160px"
-          height="160px" style="border-radius: 50%" />
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .links-container a {
+        width: 80%;
+      }
+
+      .w3-theme-l1 {
+        background-color: #009286 !important;
+        font-weight: 500;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease,
+          width 0.4s ease;
+        /* Smooth transition effect */
+      }
+
+      .w3-theme-l1:hover {
+        background-color: #00ede1 !important;
+        text-decoration: underline;
+        width: 82%;
+        box-shadow: #007371 0px 4px 8px;
+        font-weight: 700;
+      }
+
+      .margin-top-2 {
+        margin-top: 32px;
+      }
+
+      .bottom {
+        width: 100%;
+        text-align: center;
+        width: auto;
+        font-weight: bolder;
+      }
+
+      .bottom span {
+        color: #038785;
+      }
+
+      .bottom svg {
+        stroke: #038785;
+        fill: #00b6b3;
+      }
+
+      @media (min-width: 768px) {
+        .link {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your pictue here. -->
+      <div style="text-align: center">
+        <div class="image-container">
+          <img
+            src="https://avatars.githubusercontent.com/u/103002302?v=4"
+            class="w3-margin"
+            alt="image"
+            width="160px"
+            height="160px"
+            style="border-radius: 50%"
+          />
+        </div>
+
+        <p>
+          <span
+            class="name w3-padding w3-teal w3-round"
+            style="font-weight: bolder"
+            id="name"
+            >Hola, Soy Jhon Lema
+          </span>
+        </p>
+        <p style="font-weight: bolder; color: #009286">¡Mira mis enlaces! Portal AZ</p>
       </div>
 
-      <p>
-        <span class="name w3-padding w3-teal w3-round" style="font-weight: bolder" id="name">Hola, Soy Jhon Lema
-        </span>
-      </p>
-      <p style="font-weight: bolder; color: #009286">¡Mira mis enlaces!</p>
-    </div>
+      <!-- Links section 1. Replace the # inside of the "" with your links. -->
+      <h4 class="margin-top-2" style="text-align: center">
+        MIS REDES SOCIALES
+      </h4>
+      <div class="links-container">
+        <a
+          id="facebookLink"
+          href="https://www.facebook.com/jhonerlema"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >Facebook</a
+        >
+        <br />
+        <a
+          id="instagramUser"
+          href="https://www.instagram.com/jhonerlema"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >Instagram</a
+        >
+        <br />
+        <a
+          id="xUser"
+          href="https://x.com/jhonerlema"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >X</a
+        >
+        <br />
+        <a
+          id="githubUser"
+          href="https://github.com/jhonerlema"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >Github</a
+        >
+      </div>
 
-    <!-- Links section 1. Replace the # inside of the "" with your links. -->
-    <h4 class="margin-top-2" style="text-align: center">
-      MIS REDES SOCIALES
-    </h4>
-    <div class="links-container">
-      <a id="facebookLink" href="https://www.facebook.com/jhonerlema" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
-        target="_blank">Facebook</a>
-      <br />
-      <a id="instagramUser" href="https://www.instagram.com/jhonerlema" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
-        target="_blank">Instagram</a>
-      <br />
-      <a id="xUser" href="https://x.com/jhonerlema" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">X</a>
-      <br />
-      <a id="githubUser" href="https://github.com/jhonerlema" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
-        target="_blank">Github</a>
-    </div>
+      <!-- Links section 2. Replace the # inside of the "" with your links. -->
+      <h4 class="margin-top-2" style="text-align: center">MI EXPERIENCIA</h4>
+      <div class="links-container">
+        <a
+          id="linkedinUser"
+          href="https://www.linkedin.com/in/jhonerlema/"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
 
-    <!-- Links section 2. Replace the # inside of the "" with your links. -->
-    <h4 class="margin-top-2" style="text-align: center">MI EXPERIENCIA</h4>
-    <div class="links-container">
-      <a id="linkedinUser" href="https://www.linkedin.com/in/jhonerlema/" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
-        target="_blank">LinkedIn</a>
-    </div>
+      <!-- Links section 3. Replace the # inside of the "" with your links. -->
+      <h4 class="margin-top-2" style="text-align: center">MI BLOG</h4>
+      <div class="links-container">
+        <a
+          id="website"
+          href="https://www.linkedin.com/in/jhonerlema/"
+          class="w3-button w3-round-xlarge w3-theme-l1 w3-border link"
+          target="_blank"
+          >Jhon Lema</a
+        >
+      </div>
 
-    <!-- Links section 3. Replace the # inside of the "" with your links. -->
-    <h4 class="margin-top-2" style="text-align: center">MI BLOG</h4>
-    <div class="links-container">
-      <a id="website" href="https://www.linkedin.com/in/jhonerlema/" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Jhon
-        Lema</a>
+      <!-- Bottom section 3 -->
+      <div class="bottom margin-top-2 w3-padding w3-round">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-heart"
+        >
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+          ></path>
+        </svg>
+        <span id="author" style="vertical-align: 7px">
+          2025 - Hecho por JhonerLema</span
+        >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-heart"
+        >
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+          ></path>
+        </svg>
+      </div>
     </div>
-
-    <!-- Bottom section 3 -->
-    <div class="bottom margin-top-2 w3-padding w3-round">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="feather feather-heart">
-        <path
-          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-        </path>
-      </svg>
-      <span id="author" style="vertical-align: 7px">
-        2025 - Hecho por Jhon Lema</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="feather feather-heart">
-        <path
-          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-        </path>
-      </svg>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
